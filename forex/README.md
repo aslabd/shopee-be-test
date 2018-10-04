@@ -13,7 +13,7 @@ exchange rate for currencies on a daily basis. Developed using:
 2. Access the app folder via CMD, then run `docker-compose up`
 3. This APIs will run on localhost at port 3000 (<http://localhost:3000>)
 
-### Manual
+### Secara Manual
 1. Pull repository ini di suatu folder.
 2. Masuk ke dalam folder "forex"
 3. Jalankan `npm install` pada root aplikasi.
