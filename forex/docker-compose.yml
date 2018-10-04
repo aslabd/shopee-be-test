@@ -1,20 +1,12 @@
-version: '2'
+version: '3'
 
 services:
     mysql:
         image: mysql/mysql-server
-        environment:
-            MYSQL_ROOT_PASSWORD: password
         ports:
             - "127.0.0.1:3306:3306"
-        volumes:
-            -   type: bind
-                source: ./docker_db
-                target: /docker-entrypoint-initdb.d
         expose:
             - "3306"
-        networks:
-            - app-network
     forex:
         build:
             context: .
@@ -28,5 +20,3 @@ services:
             - "3000"
         links:
             - mysql
-        networks:
-            - app-network
