@@ -5,7 +5,7 @@ module.exports = {
 			user: 'root',			// database user
 			password: '',			// database password 
 			options: {
-				host: 'abdurrohim.id',	
+				host: 'localhost',	
 				dialect: 'mysql',
 				pool: {
 					max: 5,
