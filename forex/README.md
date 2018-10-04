@@ -26,7 +26,7 @@ exchange rate for currencies on a daily basis. Developed using:
 ## APIs Docs
 Dokumentasi dapat dilihat pada:
 1. Postman collection (<https://www.getpostman.com/collections/091d2c13f1024e9a5895>)
-2. Published Docs using Postman (<>)
+2. Published Docs using Postman (<https://documenter.getpostman.com/view/1278887/RWgm525i>)
 
 ## Struktur Database dan Penjelasannya
 Aplikasi ini dikembangkan dengan model arsitektur MVC (Model-View-Controller). Seluruh struktur database dimodelkan dengan ORM pada framework Sequelize yang disimpan pada folder "models". Apabila digambarkan secara sederhana ke dalam class diagram, struktur dan relasi antar tabel dari database tersebut dapat digambarkan seperti pada gambar di bawah ini.
