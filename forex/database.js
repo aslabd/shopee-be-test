@@ -8,7 +8,9 @@ var connection = require('./connection');
 var Forex = connection.import(__dirname + '/models/forex');
 var Log = connection.import(__dirname + '/models/log');
 
-// sync process
-Forex.sync().then(function(result) {    // Forex first, because Log depends on it
-    Log.sync();
+connection.query("CREATE DATABASE 'forex';").then(function(data) {
+	// sync process
+	Forex.sync().then(function(result) {    // Forex first, because Log depends on it
+	    Log.sync();
+	});
 });
