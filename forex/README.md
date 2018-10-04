@@ -14,25 +14,25 @@ exchange rate for currencies on a daily basis. Developed using:
 3. This APIs will run on localhost at port 3000 (<http://localhost:3000>)
 
 ### Manual
-1. Nyalakan server MySQL, lalu buat sebuah database dengan nama "forex", dengan username "forex" dan password "forex1234".
-2. Jalankan file database.js melalui node `node database.js`. File ini akan otomatis membuat semua tabel yang dibutuhkan sesuai struktur yang telah dimodelkan pada database.
-3. 
-
-## After running this app
-1. You can access all the APIs via Postman, click here.
-2. You can access the app, here are the list of all pages.
+1. Pull repository ini di suatu folder.
+2. Masuk ke dalam folder "forex"
+3. Jalankan `npm install` pada root aplikasi.
+4. Nyalakan server MySQL. Buat sebuah database baru bernama "forex".
+5. Jalankan aplikasi dengan perintah `npm start`.
 
 ## Main dependencies
 1. Node.js
 2. MySQL
 
 ## APIs Docs
-You can access the docs via
+Dokumentasi dapat dilihat pada:
 1. Postman collection (<https://www.getpostman.com/collections/091d2c13f1024e9a5895>)
-2. Published Docs uding Postman ()
+2. Published Docs using Postman (<>)
 
 ## Struktur Database dan Penjelasannya
 Aplikasi ini dikembangkan dengan model arsitektur MVC (Model-View-Controller). Seluruh struktur database dimodelkan dengan ORM pada framework Sequelize yang disimpan pada folder "models". Apabila digambarkan secara sederhana ke dalam class diagram, struktur dan relasi antar tabel dari database tersebut dapat digambarkan seperti pada gambar di bawah ini.
+
+![alt text](https://raw.githubusercontent.com/aslabd/shopee-be-test/master/forex/class-diagram.png "Class Diagram")
 
 Terdapat dua tabel, yaitu Forex dan Log. Forex adalah tabel untuk menyimpan daftar forex. Terdapat dua atribut utama di tabel Forex, yaitu "from" dan "to". Log adalah tabel untuk mencatat seluruh rate setiap forex per tanggal. Terdapat tiga atribut utama di tabel Log, yaitu "date", "rate", dan "forex_id". "forex_id" adalah atribut di tabel Log yang merupakan foreign key untuk menghubungkan antara tabel Log dengan tabel Forex. 
 
