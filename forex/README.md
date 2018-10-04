@@ -5,19 +5,18 @@ This APIs will be used by front-end engineers to develop an application that sto
 exchange rate for currencies on a daily basis. Developed using:
 1. Node.js with Express framework
 2. MySQL with Sequelize framework
-3. HTML and JQuery
 
 ## How to run this app
 ### Via Docker
-1. Install Docker from
-2. Access the app folder via CMD, then run `docker-compose up`
-3. This APIs will run on localhost at port 3000 (<http://localhost:3000>)
+1. Access the app folder via CMD, then run `docker-compose up --build`
+2. This APIs will run on localhost at port 3000 (<http://localhost:3000>)
 
 ### Secara Manual
 1. Pull repository ini di suatu folder.
-2. Masuk ke dalam folder "forex"
+2. Masuk ke dalam folder "forex".
 3. Jalankan `npm install` pada root aplikasi.
 4. Nyalakan server MySQL. Buat sebuah database baru bernama "forex".
+5. Jalankan file database.js melalui node dengan perintah `node database.js`
 5. Jalankan aplikasi dengan perintah `npm start`.
 
 ## Main dependencies
