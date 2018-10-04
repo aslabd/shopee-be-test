@@ -11,4 +11,5 @@ RUN npm install
 COPY . .
 
 EXPOSE 3000
+CMD ["node", "database.js"]
 CMD ["npm", "start"]

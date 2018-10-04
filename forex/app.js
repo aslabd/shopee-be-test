@@ -12,8 +12,6 @@ var forex = require('./routes/forex');
 var log = require('./routes/log');
 var views = require('./routes/views');
 
-var database = require('./database')
-
 var app = express();
 
 // view engine setup
