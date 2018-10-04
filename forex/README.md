@@ -14,9 +14,9 @@ exchange rate for currencies on a daily basis. Developed using:
 ### Secara Manual
 1. Pull repository ini di suatu folder.
 2. Masuk ke dalam folder "forex".
-3. Jalankan `npm install` pada root aplikasi.
-4. Nyalakan server MySQL. Buat sebuah database baru bernama "forex".
-5. Jalankan file database.js melalui node dengan perintah `node database.js`
+3. Jalankan `npm install` pada root aplikasi. Tahap ini akan menmasang seluruh package yang terdaftar pada package.json.
+4. Nyalakan server MySQL.
+5. Jalankan file database.js melalui node dengan perintah `node database.js`. Tahap ini akan membuat semua tabel yang dibutuhkan di database yang sebelumnya telah dibuat. (Tahap ini hanya perlu dijalankan sekali. Apabila sudah pernah dilakukan, maka langsung lompat ke tahap selanjutnya.)
 5. Jalankan aplikasi dengan perintah `npm start`.
 
 ## Main dependencies
