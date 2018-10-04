@@ -33,7 +33,7 @@ Aplikasi ini dikembangkan dengan model arsitektur MVC (Model-View-Controller). S
 
 ![alt text](https://raw.githubusercontent.com/aslabd/shopee-be-test/master/forex/class-diagram.png "Class Diagram")
 
-Terdapat dua tabel, yaitu Forex dan Log. Forex adalah tabel untuk menyimpan daftar forex. Terdapat dua atribut utama di tabel Forex, yaitu "from" dan "to". Log adalah tabel untuk mencatat seluruh rate setiap forex per tanggal. Terdapat tiga atribut utama di tabel Log, yaitu "date", "rate", dan "forex_id". "forex_id" adalah atribut di tabel Log yang merupakan foreign key untuk menghubungkan antara tabel Log dengan tabel Forex. 
+Terdapat dua tabel, yaitu Forex dan Log. Forex adalah tabel untuk menyimpan daftar forex. Terdapat dua atribut utama di tabel Forex, yaitu "from" dan "to". Log adalah tabel untuk mencatat seluruh rate setiap forex per tanggal. Terdapat tiga atribut utama di tabel Log, yaitu "date", "rate", dan "forex_id". "forex_id" adalah atribut di tabel Log yang merupakan foreign key untuk menghubungkan antara tabel Log dengan tabel Forex. Relasi antara tabel Forex dengan tabel Log adalah One to Many, yang artinya setiap forex dapat memiliki 0 hingga banyak log.
 
 ## Ada masalah? atau ada pertanyaan?
 Silahkan kontak saya melalui surel aslamabdurrohim@gmail.com atau akun LINE aslamabdurrohim.
